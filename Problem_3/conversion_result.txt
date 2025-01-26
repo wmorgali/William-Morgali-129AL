@@ -1,0 +1,3 @@
+You entered: 334
+Binary: 101001110
+Hexadecimal: 14E

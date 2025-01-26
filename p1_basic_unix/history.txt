@@ -1,0 +1,161 @@
+    1  git init
+    2  cd /root/Desktop/host
+    3  git config --global user.name wmorgali
+    4  git config --global user.email williem.santacruz@gmail.com
+    5  git checkout -b main
+    6  git init
+    7  git config --global user.name wmorgali
+    8  git config --global user.email williem.santacruz@gmail.com
+    9  git checkout -b main
+   10  git add .
+   11  git commit -m "init"
+   12  ls
+   13  echo "hello" >> hello.txt
+   14  git commit -m "new commit"
+   15  git add .
+   16  git commit -m "new commit"
+   17  pwd
+   18  cd root/Desktop/host
+   19  cd /root/Desktop/host
+   20  ls
+   21  cd root/Desktop/host
+   22  cd root/Desktop/host
+   23  cd /root/Desktop/host
+   24  ls
+   25  cd ../../
+   26  cd ..
+   27  cd host
+   28  cd root/Desktop/host
+   29  mkdir test2
+   30  cd /root/Desktop/host
+   31  ls
+   32  mkdir section1
+   33  mv hello* section1
+   34  ls
+   35  mv src* section1
+   36  ls
+   37  mkdir p1_basic_unix
+   38  cd p1_basic_unix/
+   39  ls
+   40  mkdir src
+   41  mkdir test
+   42  mkdir cache
+   43  ls
+   44  cd src
+   45  mkdir graphic
+   46  mkdir exe
+   47  mkdir utilities
+   48  cd ..
+   49  cd test
+   50  mkdir basic
+   51  mkdir composite
+   52  cd ../cache/
+   53  mkdir metadata
+   54  mkdir data
+   55  mkdir images
+   56  mkdir history
+   57  cd data
+   58  mkdir tables
+   59  mkdir directory_list
+   60  ls
+   61  cd ../..
+   62  touch test_1.txt
+   63  touch test_2.txt
+   64  touch test_3.txt
+   65  mv touch_1.txt test/basic
+   66  mv text_1.txt test/basic
+   67  mv test_1.txt test/basic
+   68  cd test/basic/
+   69  ls
+   70  cd ../../
+   71  mv test_2.txt test/basic
+   72  mv test_3.txt test/basic
+   73  echo "(William Morgali, 01/17/25)">> test/basic/test_1.txt 
+   74  cat test/basic/test_1.txt 
+   75  ls -l test/basic/test_1.txt > test/basic/test_2.txt 
+   76  cat test/basic/test_2.txt 
+   77  chmod +x test/basic/test_1.txt 
+   78  ls -l test/basic/test_1.txt >> test/basic/test_2.txt 
+   79  ls -l test/basic/test_1.txt
+   80  cat test/basic/test_2.txt 
+   81  cd .. ls
+   82  cd ..
+   83  ls
+   84  mv P1_B.tar.gz p1_basic_unix/
+   85  cd p1_basic_unix/
+   86  ls
+   87  tar -xvzf P1_B.tar.gz 
+   88  ls
+   89  ls
+   90  sha256sum P1_B.tar.gz 
+   91  ls
+   92  mv P1_B/example.sh p1_p1_basic_unix
+   93  ls
+   94  ls p1_p1_basic_unix 
+   95  ls
+   96  cd p1_p1_basic_unix 
+   97  ls
+   98  file p1_p1_basic_unix 
+   99  cd P1_B
+  100  ls
+  101  cd ..
+  102  ls
+  103  mv p1_p1_basic_unix.sh example.sh
+  104  kls
+  105  ls
+  106  ls
+  107  mv p1_p1_basic_unix example.sh
+  108  ls
+  109  mv P1_B/example_1.txt demo_1.txt
+  110  ls
+  111  cd P1_B
+  112  ls
+  113  cd ..
+  114  mv P1_B/example1.txt demo_1.txt
+  115  ls
+  116  mv P1_B/example2.txt demo_2.txt
+  117  ls
+  118  cd P1_B
+  119  ls
+  120  cd ..
+  121  ls
+  122  mv demo_1.txt src/exe/
+  123  mv demo_2.txt cache/data/tables/
+  124  rmdir P1_B
+  125  ls
+  126  ln -s "demo 1.txt" "demo link"
+  127  ls
+  128  ls-l
+  129  ls -1 demo\ link 
+  130  cd src/exe/
+  131  ls
+  132  cd ../..
+  133  ls
+  134  rmdir demo\ link 
+  135  rm demo\ link 
+  136  ls
+  137  ln -s "demo_1.txt" "demo_link"
+  138  ls
+  139  ls -l demo_link 
+  140  alias ll='ls -l'
+  141  ll demo_link 
+  142  grep 'statistics' "demo_link"
+  143  ls
+  144  grep 'statistics' demo_link
+  145  grep 'statistics' src/exe/demo_1.txt 
+  146  grep 'statistics' src/exe/demo_1.txt > src/utilities/grep_stat_demo1.txt
+  147  cd src/utilities/
+  148  ls
+  149  cd ../..
+  150  grep -r 'statistics' > cache/images/grep_stat_all.txt
+  151  grep -r 'statistics' . | tee cache/images/grep_stat_all.txt
+  152  cd cache/images/
+  153  ls
+  154  cd ../..
+  155  find . -type f -name *.txt > test/basic/test_3.txt
+  156  cd test/basic/
+  157  ls
+  158  cat test_3.txt 
+  159  cd ../..
+  160  find . -type f -name *.txt -exec grep -H 'statistics' {} \;
+  161  history | tail -n 1000 >> history.txt
